@@ -5,7 +5,7 @@ public class Employee {
     int department;
     int salary;
     private int id;
-    static int counter = 1;
+    static int counter = 0;
 
     Employee() {
         id = counter++;
@@ -30,6 +30,7 @@ public class Employee {
         return this.salary;
     }
 
+    public int getId(){return this.id;}
 
     public void setDepartment(int department) {
         this.department = department;
